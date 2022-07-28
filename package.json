@@ -1,0 +1,17 @@
+{
+  "name": "jugueteriaaylin",
+  "version": "1.0.0",
+  "description": "Sitio Web de la jugueteria. Proyecto final coderhouse",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Aylin Wisnia",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
