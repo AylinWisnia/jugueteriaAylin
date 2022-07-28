@@ -1,0 +1,43 @@
+@import "_config.scss";
+@import "_header.scss";
+@import "_contacto.scss";
+@import "_footer.scss";
+main {
+    padding-top: $header-height;
+}
+
+main.mainContent {
+    .productosSection {
+
+        .prodtitle {
+            font-size: 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #333;
+            padding-bottom: 6px;
+            text-align: center;
+        }
+        .productosContainer {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+
+            .card {
+                max-width: 200px;
+                .card-img-top {
+                    width: 180px;
+                    height: auto;
+                }
+                .card-body {
+                }
+                .card-text {
+                    white-space: nowrap !important;
+                    overflow: hidden !important;
+                    text-overflow: ellipsis !important;
+                }
+            }
+        }
+    }
+}

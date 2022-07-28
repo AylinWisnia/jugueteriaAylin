@@ -3,11 +3,242 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Jugueteria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="src/css/styles.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.ico">
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../src/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/js/main.js"></script>
+
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <header class="fondo-header position-fixed w-100">
+      <div class="col-lg-8 end-0 h-100 position-absolute top-0">
+      </div>
+      <nav class="navbar scroll-top navbar-dark navbar-expand-lg pb-3 pt-3 shadow-none">
+        <div class="container">
+          <a class="imagen-logo" href="#"><img class="navbar-logo" src="assets/images/logo.png"
+              alt="logo de la jugueteria"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown-2"
+            aria-controls="navbarNavDropdown-2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarNavDropdown-2">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#nuestra-historia">juegos y juguetes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./public/products.html">Preguntas frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./public/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pb-lg-3 pe-lg-4 ps-lg-4 pt-lg-3 text-white" href="./public/careers.html">Trabajá con
+                  nosotros</a>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mainContent">
+      <section class="carrouselSection">
+        <div id="mainCarrousel" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarrousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#mainCarrousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#mainCarrousel" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../assets/images/carrouselImg1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/images/carrouselImg2.jpg" alt="Chicago" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="../assets/images/carrouselImg3.jpg" alt="New York" class="d-block" style="width:100%">
+            </div>
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#mainCarrousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#mainCarrousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+      <section class="productosSection m-5 ">
+        <div class="prodtitle">
+          <h1>Juegos y juguetes</h1>
+        </div>
+        <div class="productosContainer">
+
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="../assets/images/productoItem.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Juegos</small></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    </main>
+
+
+    <footer class="py-5">
+      <div class="container">
+
+        <div class="row contentFooter">
+          <div class="col-4">
+            <a class="imagen-logo" href="#"><img class="navbar-logo" src="assets/images/logo.png"
+                alt="logo de la jugueteria"></a>
+          </div>
+
+          <div class="col-4 ">
+            <form class="text-white">
+              <h5>Recibí nuestras últimas ofertas!</h5>
+              <p>Cada mes recibiras nuevos productos y grandes ofertas.</p>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Corre</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Correo electronico">
+                <button class="btn btn-primary" type="button">Subscribirse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-around py-4 my-4 border-top">
+        <p class="text-white">© 2022 Todos los derechos reservados</p>
+        <div class="">
+          <a class="text-white" href="#">Privacidad</a>
+          <a class="text-white" href="#">Términos</a>
+          <a class="text-white" href="#">Cookies</a>
+          <a class="text-white" href="#">Trabaja con nosotros</a>
+        </div>
+    </footer>
+
   </body>
 </html>
