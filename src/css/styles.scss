@@ -8,7 +8,10 @@ main {
 
 main.mainContent {
     .productosSection {
-
+        #linkProductos{
+            position: absolute;
+            top: 450px;        
+        }
         .prodtitle {
             font-size: 30px;
             font-weight: 600;
@@ -21,10 +24,11 @@ main.mainContent {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: start;
             align-content: center;
 
             .card {
+                margin: 1rem;
                 max-width: 200px;
                 .card-img-top {
                     width: 180px;

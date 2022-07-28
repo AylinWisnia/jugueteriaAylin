@@ -112,7 +112,7 @@ header {
   height: 123px; }
   header .navbar-logo {
     max-height: 100px;
-    margin-bottom: -1.5rem; }
+    margin-bottom: -1rem; }
     @media only screen and (min-width: 768px) and (max-width: 1199px), only screen and (max-width: 768px) {
       header .navbar-logo {
         margin-bottom: -1rem; } }
@@ -214,6 +214,10 @@ footer {
 main {
   padding-top: 123px; }
 
+main.mainContent .productosSection #linkProductos {
+  position: absolute;
+  top: 450px; }
+
 main.mainContent .productosSection .prodtitle {
   font-size: 30px;
   font-weight: 600;
@@ -226,9 +230,10 @@ main.mainContent .productosSection .productosContainer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   align-content: center; }
   main.mainContent .productosSection .productosContainer .card {
+    margin: 1rem;
     max-width: 200px; }
     main.mainContent .productosSection .productosContainer .card .card-img-top {
       width: 180px;
