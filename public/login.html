@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Jugueteria</title>
+        <link href="../src/css/styles.css" rel="stylesheet" >
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link href="../src/css/styles.css" rel="stylesheet">
         <link rel="icon" href="../assets/images/favicon.ico">
     </head>
     <body>
@@ -31,7 +31,7 @@
                                     juguetes</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="../public/acercademi.html">Acerca de mi</a>
+                                <a class="nav-link text-white" href=../public/acercademi.html>Acerca de mi</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="../public/contacto.html">Contacto</a>
@@ -41,9 +41,9 @@
                                     href="../public/trabaja.html">Trabajá con
                                     nosotros</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link pb-lg-3 pe-lg-4 ps-lg-4 pt-lg-3 text-white" href="./login.html">Sos
-                                    cliente? Ingresá</a>
+                             <li class="nav-item">
+                                <a class="nav-link pb-lg-3 pe-lg-4 ps-lg-4 pt-lg-3 text-white"
+                                    href="#">Sos cliente? Ingresá</a>
                             </li>
                         </ul>
 
@@ -52,22 +52,37 @@
             </nav>
         </header>
 
-        <main class="acercademi">
-            <section class="acercademi_main m-5">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h1 class="text-center">Acerca de mi</h1>
-                            <p class="text-center font-monospace">
-                                Aylin Wisnia: Programadora (js) y diseñadora (html, css, bootstrap, etc).
-                            </p>
-                            <p class="text-center font-monospace">
-                                <a href="mailto:ayluwisnia@gmail.com">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/60/60543.png" alt="Email" class="email">
-                                </a>
-                            </p>
+        <main class="login">
+            <section class="login-form container">
+                <form class="mt-5 mb-5">
+                    <div class="text-center mb-4">
+                        <img class="mb-4" src="../assets/images/loginimg.png"
+                            alt="" width="72" height="72">
+                        <h1 class="h3 mb-3 font-weight-normal">Iniciar sesión</h1>
+                       
+                    </div>
 
-                        </div>
+                    <div class="form-label-group">
+                        <label for="inputEmail">Correo</label>
+                        <input type="email" id="inputEmail" class="form-control" placeholder="Correo" required=""
+                            autofocus=""
+                            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                    </div>
+
+                    <div class="form-label-group">
+                        <label for="inputContraseña">Contraseña</label>
+                        <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña"
+                            required=""
+                            style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                    </div>
+
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Recordar
+                        </label>
+                    </div>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar</button>
+                </form>
             </section>
         </main>
 
